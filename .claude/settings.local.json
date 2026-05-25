@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($env:Path = \"C:\\\\Users\\\\kuang\\\\.pico-sdk\\\\cmake;\" + $env:Path; cmake --version 2>&1 | Select-Object -First 5)",
+      "PowerShell(Get-Command cmake -ErrorAction SilentlyContinue)",
+      "PowerShell(cmake -S C:\\\\workspace\\\\PhotoPainter_S -B C:\\\\workspace\\\\PhotoPainter_S\\\\build -G Ninja)",
+      "PowerShell(Get-Command choco -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command winget -ErrorAction SilentlyContinue)",
+      "PowerShell(C:\\\\Users\\\\kuang\\\\.pico-sdk\\\\cmake\\\\v3.31.5\\\\bin\\\\cmake.exe -S C:\\\\workspace\\\\PhotoPainter_S -B C:\\\\workspace\\\\PhotoPainter_S\\\\build -G Ninja)",
+      "PowerShell(C:\\\\Users\\\\kuang\\\\.pico-sdk\\\\ninja\\\\v1.13.2\\\\ninja.exe -C C:\\\\workspace\\\\PhotoPainter_S\\\\build)",
+      "PowerShell(C:\\\\Users\\\\kuang\\\\.pico-sdk\\\\cmake\\\\v3.31.5\\\\bin\\\\cmake.exe -S C:\\\\workspace\\\\PhotoPainter_S -B C:\\\\workspace\\\\PhotoPainter_S\\\\build -G Ninja 2>&1)",
+      "PowerShell(C:\\\\Users\\\\kuang\\\\.pico-sdk\\\\ninja\\\\v1.13.2\\\\ninja.exe -C C:\\\\workspace\\\\PhotoPainter_S\\\\build 2>&1)"
+    ]
+  }
+}
